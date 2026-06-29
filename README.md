@@ -1,2 +1,4 @@
 # Python-Data-Science
-Kelas Python DataScience 
+Kelas Python Machine learning
+1. ML Pipeline
+2. ML supervised linierRegression 
