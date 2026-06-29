@@ -8,5 +8,14 @@ dash==2.11.1
 dash-bootstrap-components==1.4.0
 scikit-learn
 scipy
+xgboost 
+lightgbm
+torch 
+torchvision 
+torchaudio
+nltk 
+spacy 
+transformers 
+datasets
 statsmodels
 jupyter
