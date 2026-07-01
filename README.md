@@ -1,9 +1,8 @@
 # Python-Data-Science
-Kelas Python Machine learning
+Kelas Python Machine learning session 1
 1. ML Pipeline
 2. ML supervised linierRegression 
-3. ML Unsupervised Learning
-4. Clustering (K-Means, Hierarchica
+
 
 # apa itu Machine learning ( Pembelajaran mesin)
 Machine learning ( Pembelajaran mesin) adalah cabang dari Kecerdasan Buatan yang berfokus pada pengembangan model dan algoritma yang memungkinkan komputer belajar dari data tanpa diprogram secara eksplisit untuk setiap tugas
