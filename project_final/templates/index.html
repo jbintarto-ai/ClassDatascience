@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Sistem Diagnosis Medis AI</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+
+        <div class="card shadow">
+
+            <div class="card-header bg-primary text-white">
+
+                <h2 class="text-center">Simulasi Diagnosis Medis AI</h2>
+
+            </div>
+
+            <div class="card-body">
+
+                <form action="/diagnose_web" method="post">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">Keluhan Utama:</label>
+
+                        <textarea name="keluhan" class="form-control" rows="3" placeholder="Contoh: Demam tinggi dan batuk" required></textarea>
+
+                    </div>
+
+                    <div class="row">
+
+
+
+
+
+
+
+                        <div class="col-md-6 mb-3">
+
+
+
+                           
+
+                            <label class="form-label">Suhu Tubuh (°C): <span id="suhu">40</span></label>
+
+
+
+                            <input type="range" name="suhu" min="0" max="100" value="40" oninput="document.getElementById('suhu').innerHTML = this.value">
+
+                            
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">Tekanan Darah (Sistolik): <span id="tensi">40</span></label>
+
+                            <input type="range" name="tensi" min="0" max="200" value="40" oninput="document.getElementById('tensi').innerHTML = this.value">
+
+
+
+                           
+
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Cek Diagnosis</button>
+
+                </form>
+
+
+
+                {% if diagnosis %}
+
+                <div class="mt-4 alert alert-info">
+
+                    <h4>Hasil Prediksi:</h4>
+
+                    <p><strong>Diagnosis:</strong> {{ diagnosis }}</p>
+
+                    <p><strong>Rekomendasi:</strong> {{ rekomendasi }}</p>
+
+                </div>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
