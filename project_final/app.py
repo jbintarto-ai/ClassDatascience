@@ -5,9 +5,9 @@ import numpy as np
 app = Flask(__name__)
 
 # Muat model dan pengolah data
-model = joblib.load('medical_model.pkl')
-tfidf = joblib.load('medical_tfidf.pkl')
-params = joblib.load('scaling_params.pkl')
+model = joblib.load('project_final/medical_model.pkl')
+tfidf = joblib.load('project_final/medical_tfidf.pkl')
+params = joblib.load('project_final/scaling_params.pkl')
 
 @app.route('/')
 def home():
