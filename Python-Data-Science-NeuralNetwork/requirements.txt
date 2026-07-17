@@ -1,0 +1,15 @@
+setuptools
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+dash==2.11.1 
+dash-bootstrap-components==1.4.0
+scikit-learn
+scipy
+statsmodels
+tensorflow
+ipywidgets
+IPython
+jupyter
