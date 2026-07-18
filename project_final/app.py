@@ -6,9 +6,9 @@ app = Flask(__name__)
 
 # Muat model dan pengolah data
 try:
-    model = joblib.load('medical_model.pkl')
-    tfidf = joblib.load('medical_tfidf.pkl')
-    params = joblib.load('scaling_params.pkl')
+    model = joblib.load('project_final/medical_model.pkl')
+    tfidf = joblib.load('project_final/medical_tfidf.pkl')
+    params = joblib.load('project_final/scaling_params.pkl')
 except Exception as e:
     print(f"Peringatan: Gagal memuat file model pkl. Pastikan file pkl ada di folder yang sama. Detail: {e}")
 
